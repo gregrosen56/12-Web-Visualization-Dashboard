@@ -1,0 +1,85 @@
+<DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Research: Weather in Random Cities</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style_01.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\01_Landing_Page.html">
+                    <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\Mega-Man.jpg" width="97" height="55" title="Home">
+                </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- <ul class="nav navbar-nav navbar-left">
+                  <li class="active"><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\01_Landing_Page.html">Home<span class="sr-only">(current)</span></a></li>
+                </ul> -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\02_Visualization_1.html">Latitude vs. Temperature</a></li>
+                            <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\03_Visualization_2.html">Latitude vs. Cloudiness</a></li>
+                            <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\04_Visualization_3.html">Latitude vs. Humidity</a></li>
+                            <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\05_Visualization_4.html">Latitude vs. Wind Speed</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\06_Comparison.html">Comparison</a></li>
+                  <li><a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\07_Data.html">Data</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-7">
+                    <h1>Project Summary</h1>
+                    <div class="home_image">
+                    <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\output_analysis\Temperature_Latitude.png" title="Latitude vs Temperature">
+                    </div>
+                    <p>
+                        This project was designed to determine the effect a city's distance from the equator has on its weather.  By randomly generating 500 pairs of 
+                        latitude and longitude, then using a publicly available tool to find the world city nearest to those coordinates and pulling a snapshot of the 
+                        weather in that city, we were able to quickly generate a large dataset.
+                    <p>
+                        The usefulness of the data is up for debate.  Although we were able to confirm a very clear relationship between latitude and temperature, 
+                        there may have been a slight selection bias towards coastal cities.  Due to the Earth's surface being 70% water, any random coordinate is 
+                        more than twice as likely to end up in water, and thus the closest city to this coordinate will be coastal and often in an extreme location.
+                        For example, Ushuaia, Argentina, which is the southernmost city in the world, appears eight times in the list.
+                    <p>
+                        A more advanced method of random coordinate selection would be required to avoid issues like this, perhaps one that is aware of where the Earth's 
+                        large land masses are located.
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h1>Visualizations</h1>
+                    <a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\02_Visualization_1.html">
+                        <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\output_analysis\Temperature_Latitude.png" title="Latitude vs Temperature">
+                    </a>
+                    <a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\03_Visualization_2.html">
+                        <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\output_analysis\Cloudiness_Latitude.png" title="Latitude vs Cloudiness">
+                    </a>
+                    <a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\04_Visualization_3.html">
+                        <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\output_analysis\Humidity_Latitude.png" title="Latitude vs Humidity">
+                    </a>
+                    <a href="C:\Users\gregr\Desktop\Boot Camp\Homework 09\05_Visualization_4.html">
+                        <img src="C:\Users\gregr\Desktop\Boot Camp\Homework 09\output_analysis\WindSpeed_Latitude.png"title="Latitude vs Wind Speed">
+                    </a>
+                    <p>.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</DOCTYPE>
